@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		336E974A1DF2C9C2005A7F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E97491DF2C9C2005A7F84 /* AppDelegate.swift */; };
+		336E974C1DF2C9C2005A7F84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E974B1DF2C9C2005A7F84 /* ViewController.swift */; };
+		336E974F1DF2C9C2005A7F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336E974D1DF2C9C2005A7F84 /* Main.storyboard */; };
+		336E97511DF2C9C2005A7F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336E97501DF2C9C2005A7F84 /* Assets.xcassets */; };
+		336E97541DF2C9C2005A7F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336E97521DF2C9C2005A7F84 /* LaunchScreen.storyboard */; };
+		336E975F1DF2C9C2005A7F84 /* NTPClockAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E975E1DF2C9C2005A7F84 /* NTPClockAppTests.swift */; };
+		336E976A1DF2C9C3005A7F84 /* NTPClockAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E97691DF2C9C3005A7F84 /* NTPClockAppUITests.swift */; };
+		336E97811DF2D958005A7F84 /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E977B1DF2D958005A7F84 /* NetAssociation.m */; };
+		336E97821DF2D958005A7F84 /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E977D1DF2D958005A7F84 /* NetworkClock.m */; };
+		336E97831DF2D958005A7F84 /* NSDate+NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E977F1DF2D958005A7F84 /* NSDate+NetworkClock.m */; };
+		336E97891DF2DA39005A7F84 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E97881DF2DA39005A7F84 /* GCDAsyncUdpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		336E975B1DF2C9C2005A7F84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 336E973E1DF2C9C2005A7F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 336E97451DF2C9C2005A7F84;
+			remoteInfo = NTPClockApp;
+		};
+		336E97661DF2C9C3005A7F84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 336E973E1DF2C9C2005A7F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 336E97451DF2C9C2005A7F84;
+			remoteInfo = NTPClockApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		336E97461DF2C9C2005A7F84 /* NTPClockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTPClockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		336E97491DF2C9C2005A7F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		336E974B1DF2C9C2005A7F84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		336E974E1DF2C9C2005A7F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		336E97501DF2C9C2005A7F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		336E97531DF2C9C2005A7F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		336E97551DF2C9C2005A7F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336E975A1DF2C9C2005A7F84 /* NTPClockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTPClockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		336E975E1DF2C9C2005A7F84 /* NTPClockAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPClockAppTests.swift; sourceTree = "<group>"; };
+		336E97601DF2C9C2005A7F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336E97651DF2C9C3005A7F84 /* NTPClockAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTPClockAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		336E97691DF2C9C3005A7F84 /* NTPClockAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPClockAppUITests.swift; sourceTree = "<group>"; };
+		336E976B1DF2C9C3005A7F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336E97781DF2D957005A7F84 /* NTPClockApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTPClockApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		336E97791DF2D958005A7F84 /* ios-ntp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ios-ntp.h"; path = "ios-ntp/ios-ntp.h"; sourceTree = "<group>"; };
+		336E977A1DF2D958005A7F84 /* NetAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetAssociation.h; path = "ios-ntp/NetAssociation.h"; sourceTree = "<group>"; };
+		336E977B1DF2D958005A7F84 /* NetAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetAssociation.m; path = "ios-ntp/NetAssociation.m"; sourceTree = "<group>"; };
+		336E977C1DF2D958005A7F84 /* NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkClock.h; path = "ios-ntp/NetworkClock.h"; sourceTree = "<group>"; };
+		336E977D1DF2D958005A7F84 /* NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkClock.m; path = "ios-ntp/NetworkClock.m"; sourceTree = "<group>"; };
+		336E977E1DF2D958005A7F84 /* NSDate+NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+NetworkClock.h"; path = "ios-ntp/NSDate+NetworkClock.h"; sourceTree = "<group>"; };
+		336E977F1DF2D958005A7F84 /* NSDate+NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+NetworkClock.m"; path = "ios-ntp/NSDate+NetworkClock.m"; sourceTree = "<group>"; };
+		336E97801DF2D958005A7F84 /* ntp-log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ntp-log.h"; path = "ios-ntp/ntp-log.h"; sourceTree = "<group>"; };
+		336E97871DF2DA39005A7F84 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "network-udp/GCDAsyncUdpSocket.h"; sourceTree = "<group>"; };
+		336E97881DF2DA39005A7F84 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "network-udp/GCDAsyncUdpSocket.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		336E97431DF2C9C2005A7F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336E97571DF2C9C2005A7F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336E97621DF2C9C3005A7F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		336E973D1DF2C9C2005A7F84 = {
+			isa = PBXGroup;
+			children = (
+				336E97481DF2C9C2005A7F84 /* NTPClockApp */,
+				336E975D1DF2C9C2005A7F84 /* NTPClockAppTests */,
+				336E97681DF2C9C3005A7F84 /* NTPClockAppUITests */,
+				336E97471DF2C9C2005A7F84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		336E97471DF2C9C2005A7F84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				336E97461DF2C9C2005A7F84 /* NTPClockApp.app */,
+				336E975A1DF2C9C2005A7F84 /* NTPClockAppTests.xctest */,
+				336E97651DF2C9C3005A7F84 /* NTPClockAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		336E97481DF2C9C2005A7F84 /* NTPClockApp */ = {
+			isa = PBXGroup;
+			children = (
+				336E97491DF2C9C2005A7F84 /* AppDelegate.swift */,
+				336E974B1DF2C9C2005A7F84 /* ViewController.swift */,
+				336E974D1DF2C9C2005A7F84 /* Main.storyboard */,
+				336E97501DF2C9C2005A7F84 /* Assets.xcassets */,
+				336E97521DF2C9C2005A7F84 /* LaunchScreen.storyboard */,
+				336E97551DF2C9C2005A7F84 /* Info.plist */,
+				336E97861DF2DA2B005A7F84 /* network-udp */,
+				336E97771DF2D93A005A7F84 /* ios-ntp */,
+			);
+			path = NTPClockApp;
+			sourceTree = "<group>";
+		};
+		336E975D1DF2C9C2005A7F84 /* NTPClockAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				336E975E1DF2C9C2005A7F84 /* NTPClockAppTests.swift */,
+				336E97601DF2C9C2005A7F84 /* Info.plist */,
+			);
+			path = NTPClockAppTests;
+			sourceTree = "<group>";
+		};
+		336E97681DF2C9C3005A7F84 /* NTPClockAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				336E97691DF2C9C3005A7F84 /* NTPClockAppUITests.swift */,
+				336E976B1DF2C9C3005A7F84 /* Info.plist */,
+			);
+			path = NTPClockAppUITests;
+			sourceTree = "<group>";
+		};
+		336E97771DF2D93A005A7F84 /* ios-ntp */ = {
+			isa = PBXGroup;
+			children = (
+				336E97791DF2D958005A7F84 /* ios-ntp.h */,
+				336E977A1DF2D958005A7F84 /* NetAssociation.h */,
+				336E977B1DF2D958005A7F84 /* NetAssociation.m */,
+				336E977C1DF2D958005A7F84 /* NetworkClock.h */,
+				336E977D1DF2D958005A7F84 /* NetworkClock.m */,
+				336E977E1DF2D958005A7F84 /* NSDate+NetworkClock.h */,
+				336E977F1DF2D958005A7F84 /* NSDate+NetworkClock.m */,
+				336E97801DF2D958005A7F84 /* ntp-log.h */,
+				336E97781DF2D957005A7F84 /* NTPClockApp-Bridging-Header.h */,
+			);
+			name = "ios-ntp";
+			sourceTree = "<group>";
+		};
+		336E97861DF2DA2B005A7F84 /* network-udp */ = {
+			isa = PBXGroup;
+			children = (
+				336E97871DF2DA39005A7F84 /* GCDAsyncUdpSocket.h */,
+				336E97881DF2DA39005A7F84 /* GCDAsyncUdpSocket.m */,
+			);
+			name = "network-udp";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		336E97451DF2C9C2005A7F84 /* NTPClockApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336E976E1DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockApp" */;
+			buildPhases = (
+				336E97421DF2C9C2005A7F84 /* Sources */,
+				336E97431DF2C9C2005A7F84 /* Frameworks */,
+				336E97441DF2C9C2005A7F84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTPClockApp;
+			productName = NTPClockApp;
+			productReference = 336E97461DF2C9C2005A7F84 /* NTPClockApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		336E97591DF2C9C2005A7F84 /* NTPClockAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336E97711DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockAppTests" */;
+			buildPhases = (
+				336E97561DF2C9C2005A7F84 /* Sources */,
+				336E97571DF2C9C2005A7F84 /* Frameworks */,
+				336E97581DF2C9C2005A7F84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				336E975C1DF2C9C2005A7F84 /* PBXTargetDependency */,
+			);
+			name = NTPClockAppTests;
+			productName = NTPClockAppTests;
+			productReference = 336E975A1DF2C9C2005A7F84 /* NTPClockAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		336E97641DF2C9C3005A7F84 /* NTPClockAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336E97741DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockAppUITests" */;
+			buildPhases = (
+				336E97611DF2C9C3005A7F84 /* Sources */,
+				336E97621DF2C9C3005A7F84 /* Frameworks */,
+				336E97631DF2C9C3005A7F84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				336E97671DF2C9C3005A7F84 /* PBXTargetDependency */,
+			);
+			name = NTPClockAppUITests;
+			productName = NTPClockAppUITests;
+			productReference = 336E97651DF2C9C3005A7F84 /* NTPClockAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		336E973E1DF2C9C2005A7F84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Syafiq;
+				TargetAttributes = {
+					336E97451DF2C9C2005A7F84 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z527P83V26;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					336E97591DF2C9C2005A7F84 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z527P83V26;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 336E97451DF2C9C2005A7F84;
+					};
+					336E97641DF2C9C3005A7F84 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z527P83V26;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 336E97451DF2C9C2005A7F84;
+					};
+				};
+			};
+			buildConfigurationList = 336E97411DF2C9C2005A7F84 /* Build configuration list for PBXProject "NTPClockApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 336E973D1DF2C9C2005A7F84;
+			productRefGroup = 336E97471DF2C9C2005A7F84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				336E97451DF2C9C2005A7F84 /* NTPClockApp */,
+				336E97591DF2C9C2005A7F84 /* NTPClockAppTests */,
+				336E97641DF2C9C3005A7F84 /* NTPClockAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		336E97441DF2C9C2005A7F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336E97541DF2C9C2005A7F84 /* LaunchScreen.storyboard in Resources */,
+				336E97511DF2C9C2005A7F84 /* Assets.xcassets in Resources */,
+				336E974F1DF2C9C2005A7F84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336E97581DF2C9C2005A7F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336E97631DF2C9C3005A7F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		336E97421DF2C9C2005A7F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336E974C1DF2C9C2005A7F84 /* ViewController.swift in Sources */,
+				336E974A1DF2C9C2005A7F84 /* AppDelegate.swift in Sources */,
+				336E97831DF2D958005A7F84 /* NSDate+NetworkClock.m in Sources */,
+				336E97811DF2D958005A7F84 /* NetAssociation.m in Sources */,
+				336E97891DF2DA39005A7F84 /* GCDAsyncUdpSocket.m in Sources */,
+				336E97821DF2D958005A7F84 /* NetworkClock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336E97561DF2C9C2005A7F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336E975F1DF2C9C2005A7F84 /* NTPClockAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336E97611DF2C9C3005A7F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336E976A1DF2C9C3005A7F84 /* NTPClockAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		336E975C1DF2C9C2005A7F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 336E97451DF2C9C2005A7F84 /* NTPClockApp */;
+			targetProxy = 336E975B1DF2C9C2005A7F84 /* PBXContainerItemProxy */;
+		};
+		336E97671DF2C9C3005A7F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 336E97451DF2C9C2005A7F84 /* NTPClockApp */;
+			targetProxy = 336E97661DF2C9C3005A7F84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		336E974D1DF2C9C2005A7F84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				336E974E1DF2C9C2005A7F84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		336E97521DF2C9C2005A7F84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				336E97531DF2C9C2005A7F84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		336E976C1DF2C9C3005A7F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		336E976D1DF2C9C3005A7F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		336E976F1DF2C9C3005A7F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z527P83V26;
+				INFOPLIST_FILE = NTPClockApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syator.NTPClockApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NTPClockApp/NTPClockApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		336E97701DF2C9C3005A7F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z527P83V26;
+				INFOPLIST_FILE = NTPClockApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syator.NTPClockApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NTPClockApp/NTPClockApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		336E97721DF2C9C3005A7F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z527P83V26;
+				INFOPLIST_FILE = NTPClockAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syator.NTPClockAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTPClockApp.app/NTPClockApp";
+			};
+			name = Debug;
+		};
+		336E97731DF2C9C3005A7F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z527P83V26;
+				INFOPLIST_FILE = NTPClockAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syator.NTPClockAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTPClockApp.app/NTPClockApp";
+			};
+			name = Release;
+		};
+		336E97751DF2C9C3005A7F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z527P83V26;
+				INFOPLIST_FILE = NTPClockAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syator.NTPClockAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NTPClockApp;
+			};
+			name = Debug;
+		};
+		336E97761DF2C9C3005A7F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z527P83V26;
+				INFOPLIST_FILE = NTPClockAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syator.NTPClockAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NTPClockApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		336E97411DF2C9C2005A7F84 /* Build configuration list for PBXProject "NTPClockApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336E976C1DF2C9C3005A7F84 /* Debug */,
+				336E976D1DF2C9C3005A7F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336E976E1DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336E976F1DF2C9C3005A7F84 /* Debug */,
+				336E97701DF2C9C3005A7F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		336E97711DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336E97721DF2C9C3005A7F84 /* Debug */,
+				336E97731DF2C9C3005A7F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		336E97741DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336E97751DF2C9C3005A7F84 /* Debug */,
+				336E97761DF2C9C3005A7F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 336E973E1DF2C9C2005A7F84 /* Project object */;
+}
