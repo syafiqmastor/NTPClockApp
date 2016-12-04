@@ -18,6 +18,7 @@
 		336E97821DF2D958005A7F84 /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E977D1DF2D958005A7F84 /* NetworkClock.m */; };
 		336E97831DF2D958005A7F84 /* NSDate+NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E977F1DF2D958005A7F84 /* NSDate+NetworkClock.m */; };
 		336E97891DF2DA39005A7F84 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E97881DF2DA39005A7F84 /* GCDAsyncUdpSocket.m */; };
+		33D017FE1DF4250200C83D74 /* ntp.hosts in Resources */ = {isa = PBXBuildFile; fileRef = 33D017FD1DF4250200C83D74 /* ntp.hosts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		336E97801DF2D958005A7F84 /* ntp-log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ntp-log.h"; path = "ios-ntp/ntp-log.h"; sourceTree = "<group>"; };
 		336E97871DF2DA39005A7F84 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "network-udp/GCDAsyncUdpSocket.h"; sourceTree = "<group>"; };
 		336E97881DF2DA39005A7F84 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "network-udp/GCDAsyncUdpSocket.m"; sourceTree = "<group>"; };
+		33D017FD1DF4250200C83D74 /* ntp.hosts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ntp.hosts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				336E97501DF2C9C2005A7F84 /* Assets.xcassets */,
 				336E97521DF2C9C2005A7F84 /* LaunchScreen.storyboard */,
 				336E97551DF2C9C2005A7F84 /* Info.plist */,
+				33D017FD1DF4250200C83D74 /* ntp.hosts */,
 				336E97861DF2DA2B005A7F84 /* network-udp */,
 				336E97771DF2D93A005A7F84 /* ios-ntp */,
 			);
@@ -280,6 +283,7 @@
 			files = (
 				336E97541DF2C9C2005A7F84 /* LaunchScreen.storyboard in Resources */,
 				336E97511DF2C9C2005A7F84 /* Assets.xcassets in Resources */,
+				33D017FE1DF4250200C83D74 /* ntp.hosts in Resources */,
 				336E974F1DF2C9C2005A7F84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +570,7 @@
 				336E97701DF2C9C3005A7F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		336E97711DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockAppTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +579,7 @@
 				336E97731DF2C9C3005A7F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		336E97741DF2C9C3005A7F84 /* Build configuration list for PBXNativeTarget "NTPClockAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +588,7 @@
 				336E97761DF2C9C3005A7F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
